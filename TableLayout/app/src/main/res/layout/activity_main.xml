@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <!--
+        layout_span:    cho phép gộp một số CỘT bên phải
+                        kể từ view đang xét
+        Note:   Chỉ cho phép gộp tới cột cuối cùng của bảng.
+                Nếu giá trị layout_span > số cột -> Mặc định
+                gộp đến cột cuối cùng
+
+        ###################
+
+        stretchColumns: dãn đều các cột vừa với kích thước màn hình
+
+        ###################
+        Note:   số lượng cột lớn nhất là số lượng view lớn nhất
+                trên mỗi TableRow
+     -->
+
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_span="4"
+            android:text="Dòng cột"
+            android:textSize="30sp"
+            android:background="#ff0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Dòng cột"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_span="2"
+            android:text="Dòng cột"
+            android:textSize="30sp"
+            android:background="#ff00"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Dòng cột"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="Dòng cột"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="Dòng cột"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="Dòng cột"
+            android:textSize="30sp"/>
+    </TableRow>
+
+</TableLayout>

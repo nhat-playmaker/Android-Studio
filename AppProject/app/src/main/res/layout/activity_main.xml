@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="30sp"
+        android:textColor="#F44336"
+        android:id="@+id/textViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="150dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonClickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewContent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
+        android:textColor="#ff0"
+        android:backgroundTint="#ff00"
+        android:textAllCaps="false"
+        android:text="Click me !" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonClickMe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên:"
+        android:textColorHint="#2196F3"
+        android:textSize="30sp"
+        android:textColor="#FF5722"
+        android:drawableLeft="@drawable/icon_person"/>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="#00D9FF"
+        android:text="Xác nhận"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

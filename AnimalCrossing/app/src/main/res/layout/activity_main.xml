@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:scrollbarThumbHorizontal="@drawable/dog">
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:background="#9C27B0"
+        android:text="Score: 100"
+        android:textColor="#8BC34A"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="242dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="6dp"
+        app:srcCompat="@drawable/logo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupChoice"
+        android:layout_width="37dp"
+        android:layout_height="236dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="2dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonSquirrel"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDog"
+            android:layout_width="match_parent"
+            android:layout_height="87dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonJaguar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBarDog"
+        android:layout_width="653dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:thumb="@drawable/dog"
+        android:max="5000"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <SeekBar
+        android:id="@+id/seekBarJaguar"
+        android:layout_width="653dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:thumb="@drawable/jaguar"
+        android:max="5000"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <SeekBar
+        android:id="@+id/seekBarSquirrel"
+        android:layout_width="653dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="173dp"
+        android:thumb="@drawable/squirrel"
+        android:max="5000"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonPlayButton"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/play" />
+
+
+</RelativeLayout>
