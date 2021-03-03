@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <bitmap android:src="@drawable/big"
+            android:gravity="center"/>
+    </item>
+
+    <item android:top="300dp" android:left="300dp">
+        <bitmap android:src="@drawable/android1"
+            android:gravity="center" />
+    </item>
+
+    <item android:bottom="100dp">
+        <bitmap android:src="@drawable/android2"
+            android:gravity="center"/>
+    </item>
+
+
+</layer-list>
