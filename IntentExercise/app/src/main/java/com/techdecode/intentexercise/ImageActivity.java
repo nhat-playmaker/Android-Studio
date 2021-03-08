@@ -5,7 +5,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.app.Activity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableLayout;
@@ -25,7 +27,7 @@ public class ImageActivity extends Activity {
 
         myTable = (TableLayout) findViewById(R.id.tableLayoutImage);
 
-        int numCols = 3, numRows = 4;
+        int numCols = 3, numRows = 6;
 
         Collections.shuffle(MainActivity.arrayName);
 
@@ -34,7 +36,12 @@ public class ImageActivity extends Activity {
 
             for (int j=1; j<=numCols; j++) {
                 ImageView imageView = new ImageView(this);
-                TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(260, 260);
+
+                Resources resources = getResources();
+                int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100,
+                        resources.getDisplayMetrics());
+
+                TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(px, px);
                 imageView.setLayoutParams(layoutParams);
 
                 int locate = numCols * (i - 1) + j - 1;
