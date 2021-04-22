@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">testUIApp</string>
+
+    <!-- String of data -->
+    <string name="pm2.5">PM2.5</string>
+    <string name="pm10">PM10</string>
+    <string name="co2">CO2</string>
+    <string name="hcho">HCHO</string>
+    <string name="tvoc">TVOC</string>
+
+    <!-- AQI state -->
+    <string name="good">Good</string>
+    <string name="moderate">Moderate</string>
+    <string name="unhealthyForSensitiveSkin">
+        Unhealthy for sensitive skin
+    </string>
+    <string name="unhealthy">Unhealthy</string>
+    <string name="veryUnhealthy">Very unhealthy</string>
+    <string name="hazardous">Hazardous</string>
+
+    <!-- Recommendation -->
+    <!-- Good -->
+    <string name="outdoor_good">Enjoying outdoor activities</string>
+    <string name="window_good">Open the windows to get the fresh air to house</string>
+
+    <!-- Sensitive -->
+    <string name="outdoor_sensitive">The sensitive group should reduce outdoor exercise</string>
+    <string name="window_closing">Closing window to prevent polluted air from outside</string>
+
+    <!-- Unhealthy -->
+    <string name="outdoor_unhealthy">Avoiding doing outdoor exercise</string>
+    <string name="face_mask">Wearing face mask when go outside</string>
+    <string name="air_purifier">Running the air purifier machine</string>
+
+    <!-- Noted -->
+    <string name="aqivn">AQI VN</string>
+
+
+
+</resources>
